@@ -1,2 +1,33 @@
-# sugen-ai
-Sugen: A local-first, open-source AI Copilot for university students. Features audio-to-notes, smart review, and growth planning. 100% private and free.
+# Sugen (溯迹)
+
+> *溯迹 · 思不出其位*
+> 每一条建议，都不超出你的数据与证据边界。
+
+**Sugen (溯迹)** 是一款**本地优先 (Local-first)、完全开源免费**的大学生 AI 学习与生活管家。我们致力于构建一个覆盖“课堂-课后-复习-规划”全链路的个人知识系统，让大模型真正成为你的数字分身。
+
+数据不出本地，断网也能用。你的笔记、录音和错题，只属于你自己。
+
+## ✨ 核心特性 (Features)
+- **课堂多模态记录**：录音智能转写，结合 PPT/PDF 讲义，自动生成结构化笔记与思维导图。
+- **个人知识库与错题诊断**：导入 Office 文档/错题本，AI 自动提取知识点、分析错因并生成同类练习。
+- **学习工作流与规划**：基于遗忘曲线与错题数据生成复习建议；自动提取任务生成每日 To-Do；定制个人成长路线。
+
+## 🛠️ 技术栈 (Tech Stack)
+- **本地推理引擎**: Ollama
+- **大语言模型**: Qwen 2.5 (通义千问开源版，7B/14B 模型)
+- **核心架构**: RAG (检索增强生成) + Agent 工作流
+- **数据存储 (规划)**: SQLite + 向量数据库 (Chroma / sqlite-vec)
+- **前端交互 (规划)**: Web UI / CLI
+
+## 🗺️ 开发路线图 (Roadmap)
+- [x] **Phase 0: 项目立项** (现在在这里)
+- [ ] **Phase 1: 极简 MVP (录音转笔记)** - 实现音频转文字，并通过 LLM 提取重点生成 Markdown 笔记。
+- [ ] **Phase 2: 资料库接入** - 支持导入 PDF/PPT，实现文档与音频的 RAG 检索。
+- [ ] **Phase 3: 错题与代办** - 增加错题诊断与每日待办事项管理。
+- [ ] **Phase 4: 成长规划** - 全局知识图谱与个性化学习路线推荐。
+
+## 🤝 参与贡献
+项目处于极早期设计阶段，欢迎在 Issues 中讨论功能方向或提交 PR！
+
+## 📄 License
+[AGPL-3.0](LICENSE)
